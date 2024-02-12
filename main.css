@@ -1,0 +1,51 @@
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+.task{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+.btn button {
+    padding: 10px 20px; 
+    border: 2px solid #f3f3f3;
+    background-color: teal; 
+    border-radius: 5px; 
+    color: white; 
+    font-weight: bold; 
+    text-transform: uppercase;
+    cursor: pointer; 
+}
+.side_bar{
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 0;
+}
+.show_sidebar{
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 25%;
+  background-color: #f3f3f3;
+  height: 100%;
+}
+.overlay {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    width: 75%;
+    background-color: rgba(0, 0, 0, 0.5); /* تعيين لون الغطاء وتعتيمه */
+    z-index: 9999; /* تأكد من أن الغطاء فوق كل شيء آخر */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .hidden{
+    display: none;
+  }
